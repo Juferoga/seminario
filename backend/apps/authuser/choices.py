@@ -5,6 +5,7 @@ class RoleChoices(models.IntegerChoices):
   ADMINISTRATOR = 1, 'Administrador'
   EMPLOYEE = 2, 'Empleado'
   CLIENT = 3, 'Cliente'
+  STUDENT = 4, 'Estudiante'
 
 class TypeIdentificationChoices(models.IntegerChoices):
   CEDULA = 1, 'Cédula de ciudadanía'

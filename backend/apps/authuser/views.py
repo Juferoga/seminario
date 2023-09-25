@@ -1,7 +1,7 @@
 from rest_framework import generics
-from .models import Employee, Customer
+from .models import Employee, Customer, Student
 from .choices import RoleChoices, TypeIdentificationChoices 
-from .serializers import EmployeeSerializer, CustomerSerializer
+from .serializers import EmployeeSerializer, CustomerSerializer, StudentSerializer
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
@@ -9,7 +9,7 @@ from rest_framework.response import Response
 from rest_framework import viewsets, permissions
 from django.http import HttpResponseServerError
 
-
+# Empleado
 class EmployeeCreateView(generics.CreateAPIView):
     queryset = Employee.objects.all()
     permission_classes = (permissions.AllowAny,)
@@ -25,6 +25,7 @@ class EmployeeListView(generics.ListAPIView):
     permission_classes = (permissions.AllowAny,)
     serializer_class = EmployeeSerializer
 
+# Cliente
 class CustomerCreateView(generics.CreateAPIView):
     queryset = Customer.objects.all()
     permission_classes = (permissions.AllowAny,)
@@ -39,6 +40,22 @@ class CustomerListView(generics.ListAPIView):
     queryset = Customer.objects.all()
     permission_classes = (permissions.AllowAny,)
     serializer_class = CustomerSerializer
+
+# Estudiante
+class StudentCreateView(generics.CreateAPIView):
+    queryset = Student.objects.all()
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = StudentSerializer
+
+class StudentDetailView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Student.objects.all()
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = StudentSerializer
+
+class StudentListView(generics.ListAPIView):
+    queryset = Student.objects.all()
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = StudentSerializer
 
 class CustomAuthToken(ObtainAuthToken):
 
@@ -88,6 +105,16 @@ class UserProfileView(generics.RetrieveAPIView):
             serializer = CustomerSerializer(user)
             data = serializer.data
             data['role'] = 'Cliente'
+            data['id'] = user.n_id
+            data['username'] = user.get_full_name()
+            data['n_points'] = user.n_points
+            data['n_phone'] = user.n_phone
+            data['email'] = user.email
+            data['is_active'] = user.is_active
+        elif user.t_rol == 4:
+            serializer = CustomerSerializer(user)
+            data = serializer.data
+            data['role'] = 'Estudiante'
             data['id'] = user.n_id
             data['username'] = user.get_full_name()
             data['n_points'] = user.n_points

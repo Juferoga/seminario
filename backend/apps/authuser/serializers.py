@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Employee, Customer
+from .models import Employee, Customer, Student
 
 class EmployeeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -28,3 +28,17 @@ class CustomerSerializer(serializers.ModelSerializer):
         customer.set_password(password)
         customer.save()
         return customer
+
+class StudentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Student
+        fields = ['n_id', 't_id', 'n_phone', 'email', 'name', 'password', 'n_points', 'password','is_active', 'n_code']
+        read_only_fields = ('is_active',)
+        extra_kwargs = {'password': {'write_only': True}}
+    
+    def create(self, validated_data):
+        password = validated_data.pop('password')
+        student = Student.objects.create_student(**validated_data)
+        student.set_password(password)
+        student.save()
+        return student

@@ -30,15 +30,11 @@ LIBRARY_APPS = [
 
 PROJECT_APPS = [
     'apps.authuser',
-    'apps.product',
-    'apps.purchase',
-    'apps.movie',
-    'apps.function',
-    'apps.theater',
-    'apps.cinema',
-    'apps.seat',
-    'apps.stats',
-    'apps.hall',
+    'apps.resources',
+    'apps.places',
+    'apps.artifacts',
+    'apps.payments',
+    'apps.reservation',
 ]
 
 INSTALLED_APPS = SYSTEM_APPS + LIBRARY_APPS + PROJECT_APPS
