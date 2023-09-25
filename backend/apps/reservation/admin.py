@@ -14,7 +14,9 @@ class ReservationAdmin(admin.ModelAdmin):
     fieldsets = (
         ('Información Básica', {
             'fields': (
-                'd_reservation', 'b_status'
+                'd_reservation', 'b_status',
+                'fk_customer', 'fk_student',
+                'fk_employee', 'fk_payment'
             )
         }),
         ('Fechas', {

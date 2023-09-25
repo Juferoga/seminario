@@ -17,7 +17,8 @@ class ResourceAdmin(admin.ModelAdmin):
             'fields': (
               't_name', 
               't_description', 
-              'n_price'
+              'n_price',
+              'fk_reservation'
             )
         }),
         ('Fechas', {

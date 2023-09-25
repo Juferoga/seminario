@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 from abc import abstractmethod, ABC
 from .choices import ResourcesStatusChoices
+from ..reservation.models import Reservation
 
 class Resource(models.Model):
   pk_id = models.AutoField(
@@ -37,6 +38,12 @@ class Resource(models.Model):
     default=ResourcesStatusChoices.ACTIVE,
     verbose_name="Estado del recurso"
   )
+  fk_reservation = models.ForeignKey(
+      Reservation, 
+      verbose_name=("Llave foránea reservación"), 
+      on_delete=models.CASCADE,
+      null=True
+    )
 
   def is_active(self):
     return self.b_status

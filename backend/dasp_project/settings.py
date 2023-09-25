@@ -37,7 +37,7 @@ PROJECT_APPS = [
     'apps.reservation',
 ]
 
-INSTALLED_APPS = SYSTEM_APPS + LIBRARY_APPS + PROJECT_APPS
+INSTALLED_APPS = PROJECT_APPS + SYSTEM_APPS + LIBRARY_APPS 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

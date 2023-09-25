@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from ..authuser.models import Employee, Student, Customer
+from ..payments.models import Payment
 
 class Reservation(models.Model):
     pk_id = models.AutoField(
@@ -35,6 +36,12 @@ class Reservation(models.Model):
     fk_employee = models.ForeignKey(
       Employee, 
       verbose_name=("Llave foránea empleado"), 
+      on_delete=models.CASCADE,
+      null=True
+    )
+    fk_payment = models.ForeignKey(
+      Payment, 
+      verbose_name=("Llave foránea Pago"), 
       on_delete=models.CASCADE,
       null=True
     )
