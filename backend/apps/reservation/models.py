@@ -25,13 +25,15 @@ class Reservation(models.Model):
       Customer, 
       verbose_name=("Llave foránea cliente"), 
       on_delete=models.CASCADE,
-      null=True
+      null=True,
+      blank=True
     )
     fk_student = models.ForeignKey(
       Student, 
       verbose_name=("Llave foránea estudiante"), 
       on_delete=models.CASCADE,
-      null=True
+      null=True,
+      blank=True
     )
     fk_employee = models.ForeignKey(
       Employee, 

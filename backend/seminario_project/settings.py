@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
 ]
 
-ROOT_URLCONF = 'dasp_project.urls'
+ROOT_URLCONF = 'seminario_project.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'dasp_project.wsgi.application'
+WSGI_APPLICATION = 'seminario_project.wsgi.application'
 
 DATABASES = {
     'default': {

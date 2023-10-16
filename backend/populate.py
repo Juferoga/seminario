@@ -5,7 +5,7 @@ from faker import Faker
 from datetime import timedelta
 from datetime import datetime, time, timedelta, date
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dasp_project.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "seminario_project.settings")
 django.setup()
 
 from django.utils import timezone
