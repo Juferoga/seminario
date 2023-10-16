@@ -34,4 +34,4 @@ class Payment(models.Model):
 
     class Meta:
       verbose_name = 'Medio de pago'
-      verbose_name_plural = 'Medios de pagos'
+      verbose_name_plural = 'Medios de pago'

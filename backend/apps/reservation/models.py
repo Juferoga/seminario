@@ -50,5 +50,5 @@ class Reservation(models.Model):
       return f"Reservation {self.pk_id}"
 
     class Meta:
-      verbose_name = 'Medio de pago'
-      verbose_name_plural = 'Medios de pagos'
+      verbose_name = 'Reservación'
+      verbose_name_plural = 'Reservaciones'
