@@ -10,4 +10,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("api/", include('apps.api.urls')),
     path('', views.HomePage),
+    path('integration-test', views.IntegrationTest),
+    
 ]
