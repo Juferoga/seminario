@@ -35,6 +35,7 @@ PROJECT_APPS = [
     'apps.artifacts',
     'apps.payments',
     'apps.reservation',
+    'apps.api',
 ]
 
 INSTALLED_APPS = PROJECT_APPS + SYSTEM_APPS + LIBRARY_APPS 
