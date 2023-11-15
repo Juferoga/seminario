@@ -14,6 +14,7 @@ SECRET_KEY = 'django-insecure-s&zw^-6i(snxq%26amhs=kkfblob4z#8i+=k=qvvxargqmrkpc
 DEBUG = True
 
 SYSTEM_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -151,3 +152,23 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers)
+
+
+
+
+### Configuración Jazzmin
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Inventarios UD",
+    "site_header": "Inventarios UD",
+    "site_brand": "Inventarios UD",
+    "site_logo": "/imgs/icon.svg",
+
+    # CSS classes that are applied to the logo above
+    "site_logo_classes": "img-circle",
+
+    "site_icon": "/imgs/favicon.ico",
+    "welcome_sign": "Bienvenido al sistema de Inventarios UD",
+
+    "copyright": "Seminario de ingeniería de software",
+}
