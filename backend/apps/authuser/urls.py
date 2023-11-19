@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import EmployeeCreateView, EmployeeDetailView, EmployeeListView, CustomerCreateView, CustomerDetailView, CustomerListView, CustomAuthToken, UserProfileView
+from .views import EmployeeCreateView, EmployeeDetailView, EmployeeListView, CustomerCreateView, CustomerDetailView, CustomerListView, CustomAuthToken, UserProfileView, StudentCreateView
 
 urlpatterns = [
     path('employee/create/', EmployeeCreateView.as_view(), name='employee_create'),
@@ -10,4 +10,6 @@ urlpatterns = [
     path('customer/list/', CustomerListView.as_view(), name='customer_list'),
     path('api-token-auth/', CustomAuthToken.as_view(), name='api_token_auth'),
     path('me/', UserProfileView.as_view(), name='user-profile'),
+    path('estudent/create/', StudentCreateView.as_view(), name='student_create'),
+
 ]

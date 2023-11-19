@@ -5,6 +5,7 @@ from rest_framework import status
 from rest_framework.test import APIClient
 from .models import Employee, Customer, Student
 from django.contrib.auth import get_user_model
+from .choices import RoleChoices
 
 class AuthenticationTests(TestCase):
 
@@ -36,4 +37,28 @@ class AuthenticationTests(TestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
+    def test_create_student(self):
+        url = reverse('student_create')  # Define la variable 'url' para la prueba
 
+        self.client = APIClient() 
+
+        data = {
+            'n_id': 1234,
+            't_id': 1,
+            'n_phone': 123456789,
+            'email': 'student@example.com',
+            'name': 'Student Doe',
+            'password': 'securepassword',
+            'n_points': 50000.00,
+            'd_start_contract': '2023-01-01T00:00:00Z',
+            'd_end_contract': '2023-12-31T23:59:59Z',
+            't_rol': RoleChoices.STUDENT  
+        }
+
+
+        response = self.client.post(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(Student.objects.count(), 1)
+        self.assertEqual(Student.objects.get().email, 'student@example.com')
+
+ 
