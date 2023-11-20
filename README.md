@@ -3,7 +3,9 @@
 <img src="https://www.udistrital.edu.co/themes/custom/versh/images/default/preloader.png" width="192px" height="192px" align="right"/>
 
 [![Juan Felipe Rodriguez Galindo](https://img.shields.io/badge/Juferoga-github-br?style=flat-square)][1]
-[![Daniel Parra](https://img.shields.io/badge/BrayanYate-github-br?style=flat-square)][10]
+[![Daniel Parra](https://img.shields.io/badge/DanielParra-github-br?style=flat-square)][10]
+[![Cristhian Guzman](https://img.shields.io/badge/CristhianGuzman-github-br?style=flat-square)][10]
+[![Andres Jiménez](https://img.shields.io/badge/AndresJimenez-github-br?style=flat-square)][10]
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)][2]
 
 Repositorio para almacenar las tareas, talleres, ejercicios, entre otros que se desarrollen a lo largo de la seminario de ingeniería de software, proyecto IntegraServicios.
