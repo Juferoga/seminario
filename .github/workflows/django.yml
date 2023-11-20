@@ -27,4 +27,8 @@ jobs:
         pip install -r backend/requirements.txt
     - name: Run Tests
       run: |
-        python backend/manage.py test apps.resources.test
+        python backend/manage.py test apps.resources.tests
+        python backend/manage.py test apps.reservation.tests
+        python backend/manage.py test apps.authuser.tests
+        python backend/manage.py test apps.places.tests
+        # python backend/manage.py test apps.artifacts.tests
