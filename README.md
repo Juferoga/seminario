@@ -6,7 +6,7 @@
 [![Daniel Parra](https://img.shields.io/badge/BrayanYate-github-br?style=flat-square)][10]
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)][2]
 
-Repositorio para almacenar las tareas, talleres, ejercicios, entre otros que se desarrollen a lo largo de la seminario de ingeniería de software, proyecto CINE PACHO.
+Repositorio para almacenar las tareas, talleres, ejercicios, entre otros que se desarrollen a lo largo de la seminario de ingeniería de software, proyecto IntegraServicios.
 
 ## Contenido
 
@@ -55,7 +55,9 @@ Sigue la [guía de github][8] para más información.
 ## Contributors
 
 - [Juan Felipe Rodríguez Galindo - Código 20181020158][1]
-- [Daniel Parra 20181020000][10]
+- [Daniel Parra - 20181020000][10]
+- [Cristhian Guzman - Código 20181020000][10]
+- [Andres Jimenez - 20181020000][10]
 
  [1]:https://gitlab.com/Juferoga
  [2]:https://github.com/Juferoga/seminario/blob/main/LICENSE
