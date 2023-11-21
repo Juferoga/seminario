@@ -4,7 +4,7 @@
 
 [![Juan Felipe Rodriguez Galindo](https://img.shields.io/badge/Juferoga-github-br?style=flat-square)][1]
 [![Daniel Parra](https://img.shields.io/badge/DanielParra-github-br?style=flat-square)][10]
-[![Cristian Guzman](https://img.shields.io/badge/CristhianGuzman-github-br?style=flat-square)][11]
+[![Cristian Guzman](https://img.shields.io/badge/CristianGuzman-github-br?style=flat-square)][11]
 [![Andres Jiménez](https://img.shields.io/badge/AndresJimenez-github-br?style=flat-square)][10]
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)][2]
 
@@ -58,7 +58,7 @@ Sigue la [guía de github][8] para más información.
 
 - [Juan Felipe Rodríguez Galindo - Código 20181020158][1]
 - [Daniel Parra - 20181020000][10]
-- [Cristhian Guzman - Código 20181020000][10]
+- [Cristian Guzman - Código 20192020089][11]
 - [Andres Jimenez - 20181020000][10]
 
  [1]:https://gitlab.com/Juferoga
