@@ -4,7 +4,7 @@
 
 [![Juan Felipe Rodriguez Galindo](https://img.shields.io/badge/Juferoga-github-br?style=flat-square)][1]
 [![Daniel Parra](https://img.shields.io/badge/DanielParra-github-br?style=flat-square)][10]
-[![Cristhian Guzman](https://img.shields.io/badge/CristhianGuzman-github-br?style=flat-square)][10]
+[![Cristian Guzman](https://img.shields.io/badge/CristhianGuzman-github-br?style=flat-square)][11]
 [![Andres Jiménez](https://img.shields.io/badge/AndresJimenez-github-br?style=flat-square)][10]
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)][2]
 
@@ -70,3 +70,4 @@ Sigue la [guía de github][8] para más información.
  [7]:https://github.com/Juferoga/seminario/frontend/
  [8]:https://docs.github.com/es/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
  [10]:https://gitlab.com/BrayanYate
+ [11]:https://gitlab.com/CristianSGT89
