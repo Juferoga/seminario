@@ -13,7 +13,7 @@ class ArtifactTestCase(TestCase):
             't_description': 'Descripción del artifact de prueba', 
             'n_type': ArtifactTypeChoices.FURNITURE, 
             } 
-        self.artifact = Artifact.objects.create(**self.artifact) 
+        self.artifact = Artifact.objects.create(**self.artifact_data) 
     
     def test_create_artifact(self): 
         url = reverse('artifact-list') 
@@ -48,4 +48,4 @@ class ArtifactTestCase(TestCase):
 
         self.assertEqual(response.status_code, status.HTTP_200_OK) 
         self.assertEqual(response.data['t_name'], self.artifact.t_name) 
-        self.assertEqual(response.data['n_price'], str(self.artifact.n_price))
+        self.assertEqual(str(response.data['n_price']), str(self.artifact.n_price))
