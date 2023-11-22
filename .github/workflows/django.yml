@@ -25,10 +25,18 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r backend/requirements.txt
-    - name: Run Tests
+    - name: Run Tests [Resources]
       run: |
         python backend/manage.py test apps.resources.tests
+    - name: Run Tests [Reservations]
+      run: |
         python backend/manage.py test apps.reservation.tests
+    - name: Run Tests [Users and auth]
+      run: |  
         python backend/manage.py test apps.authuser.tests
+    - name: Run Tests [Places]
+      run: |  
         python backend/manage.py test apps.places.tests
+    - name: Run Tests [Artifacts]
+      run: |  
         python backend/manage.py test apps.artifacts.tests
