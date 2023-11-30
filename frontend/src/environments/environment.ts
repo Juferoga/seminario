@@ -12,8 +12,8 @@ export const environment = {
   materia: 'Seminario de ING. SOFT.',
   proyecto: 'Sistema de información para el préstamo de inventarios.',
   profesor: 'Santiago Salazar',
-  api: 'https://back.juferoga.live/api/',
-  server: 'https://back.juferoga.live/',
-  // api: 'http://localhost:8000/api/',
-  // server: 'http://localhost:8000/',
+  //api: 'https://back.juferoga.live/api/',
+  //server: 'https://back.juferoga.live/',
+  api: 'http://localhost:8000/api/',
+  server: 'http://localhost:8000/',
 };

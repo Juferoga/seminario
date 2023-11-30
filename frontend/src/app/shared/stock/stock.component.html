@@ -2,7 +2,7 @@
   <p-tabPanel>
     <ng-template pTemplate="header">
       <i class="pi pi-box me-2"></i>
-      <span>Snacks</span>
+      <span>Artefactos</span>
     </ng-template>
     <div>
       <div class="card">
@@ -28,7 +28,7 @@
         >
             <ng-template pTemplate="caption">
                 <div class="flex align-items-center justify-content-between">
-                    <h5 class="m-0">Gestión snacks</h5>
+                    <h5 class="m-0">Gestión artefactos</h5>
                     <!-- <span class="p-input-icon-left">
                         <i class="pi pi-search"></i>
                         <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Search..." />
@@ -61,7 +61,7 @@
                 </tr>
             </ng-template>
             <ng-template pTemplate="summary">
-                <div class="flex align-items-center justify-content-between">En total hay {{ snacks ? snacks.length : 0 }} snacks.</div>
+                <div class="flex align-items-center justify-content-between">En total hay {{ snacks ? snacks.length : 0 }} artefactos.</div>
             </ng-template>
         </p-table>
       </div>
@@ -116,8 +116,8 @@
   </p-tabPanel>
   <p-tabPanel header="Tickets">
     <ng-template pTemplate="header">
-      <i class="pi pi-ticket me-2"></i>
-      <span>Tickets</span>
+      <i class="pi pi-map-marker me-2"></i>
+      <span>Lugares</span>
     </ng-template>
     <div>
         <div class="card">
@@ -143,7 +143,7 @@
           >
               <ng-template pTemplate="caption">
                   <div class="flex align-items-center justify-content-between">
-                      <h5 class="m-0">Gestión tickets</h5>
+                      <h5 class="m-0">Gestión Lugares</h5>
                       <!-- <span class="p-input-icon-left">
                           <i class="pi pi-search"></i>
                           <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Search..." />
@@ -176,7 +176,7 @@
                   </tr>
               </ng-template>
               <ng-template pTemplate="summary">
-                  <div class="flex align-items-center justify-content-between">En total hay {{ tickets ? tickets.length : 0 }} tickets.</div>
+                  <div class="flex align-items-center justify-content-between">En total hay {{ tickets ? tickets.length : 0 }} lugares.</div>
               </ng-template>
           </p-table>
         </div>
