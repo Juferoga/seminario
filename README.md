@@ -61,6 +61,8 @@ Sigue la [guía de github][8] para más información.
 - [Cristian Guzman - Código 20192020089][11]
 - [Andres Jimenez - 20181020000][10]
 
+
+
  [1]:https://gitlab.com/Juferoga
  [2]:https://github.com/Juferoga/seminario/blob/main/LICENSE
  [3]:https://angular.io/
