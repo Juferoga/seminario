@@ -9,3 +9,5 @@ echo -e "DESPLEGANDO BACKEND"
 cd ../backend/
 sh deploy.sh
 echo -e "FIN DESPLIEGUE BACKEND"
+
+echo -e "TODO DESPLEGADO :D"
