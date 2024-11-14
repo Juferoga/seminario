@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo -e "Hola :v"
+
 echo -e "DESPLEGANDO FRONTEND"
 cd ./frontend
 sh deploy.sh
